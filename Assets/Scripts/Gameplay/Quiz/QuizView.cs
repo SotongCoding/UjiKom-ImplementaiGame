@@ -4,6 +4,7 @@ using UnityEngine;
 
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.U2D;
 
 [System.Serializable]
 public class QuizView
@@ -26,5 +27,11 @@ public class QuizView
     {
         timerFill.fillAmount = timePercent;
         timerText.text = time.ToString();
+    }
+    public void InitImage(string packId, string pictureName)
+    {
+        hintImage.sprite = Resources.Load<SpriteAtlas>(packId).GetSprite(pictureName);
+        hintImage.SetNativeSize();
+
     }
 }

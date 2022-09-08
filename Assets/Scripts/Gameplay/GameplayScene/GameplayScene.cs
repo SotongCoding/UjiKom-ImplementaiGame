@@ -22,6 +22,10 @@ public class GameplayScene : MonoBehaviour
 
         Gameflow.Instance.onLoseLevel += StopAllCoroutines;
         Gameflow.Instance.onClearAllLevel += StopAllCoroutines;
+        Gameflow.Instance.onClearAllLevel += () =>
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Pack");
+        };
     }
 
     private void StartTimer()

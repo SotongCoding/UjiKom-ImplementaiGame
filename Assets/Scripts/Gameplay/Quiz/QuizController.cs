@@ -34,7 +34,7 @@ public class QuizController
 
 
         //Initial UI
-        // quizView.hintImage.sprite = Resources.Load<Sprite>(levelData.hint);
+        quizView.InitImage(levelData.packId,levelData.hint);
         quizView.ClearButton();
         quizView.questionText.text = levelData.question;
 
