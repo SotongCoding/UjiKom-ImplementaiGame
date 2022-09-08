@@ -31,7 +31,7 @@ public class QuizView
     public void InitImage(string packId, string pictureName)
     {
         hintImage.sprite = Resources.Load<SpriteAtlas>(packId).GetSprite(pictureName);
-        hintImage.SetNativeSize();
+        //hintImage.SetNativeSize();
 
     }
 }
