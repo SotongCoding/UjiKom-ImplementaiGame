@@ -14,8 +14,8 @@ public class PackData : MonoBehaviour
         bool isPackUnlock = true;//SaveData.Instacnce.IsPackUnlock(packId);
 
         packUI.SetInfo(packName, CommonVariable.PACK_PRIZE, isFinish, isPackUnlock);
-        packUI.SetButtonEvent(SelectPack,PurchasePack);
-        
+        packUI.SetButtonEvent(SelectPack, PurchasePack);
+
     }
 
     void PurchasePack()
@@ -30,5 +30,7 @@ public class PackData : MonoBehaviour
     {
         Debug.Log("SelectPack : " + packId);
         PlayerPrefs.SetString(CommonVariable.SAVED_SELECTED_PACK, packId);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Level");
+
     }
 }

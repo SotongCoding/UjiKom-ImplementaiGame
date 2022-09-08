@@ -12,6 +12,7 @@ public class QuizView
     public Image hintImage;
     public Button[] answerButton;
     public Image timerFill;
+    public TextMeshProUGUI timerText;
 
     public void ClearButton()
     {
@@ -21,8 +22,9 @@ public class QuizView
         }
     }
 
-    public void UpdateTime(float timePercent)
+    public void UpdateTime(float timePercent, int time)
     {
         timerFill.fillAmount = timePercent;
+        timerText.text = time.ToString();
     }
 }

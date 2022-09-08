@@ -15,30 +15,201 @@ MonoBehaviour:
   allLevelData:
   - levelId: A-1
     packId: A
-    question: Siapakah Namaku ?
+    question: Warna dari Mawar ?
     hint: pictA-1
     choice:
-    - Nama
-    - NamaKu
-    - NamakuAdalah
-    - NamaKuAdalahSiapa
+    - Merah
+    - Biru
+    - Hijau
+    - Kuning
     answer: 0
   - levelId: A-2
     packId: A
-    question: Siapakah Namaku  Yang ke 2 ?
+    question: Warna dari Langit ?
     hint: pictA-2
     choice:
-    - Nama2
-    - NamaKu2
-    - NamakuAdalah2
-    - NamaKuAdalahSiapa2
+    - Merah
+    - Biru
+    - Hijau
+    - Kuning
+    answer: 1
+  - levelId: A-3
+    packId: A
+    question: Warna dari Daun ?
+    hint: pictA-3
+    choice:
+    - Merah
+    - Biru
+    - Hijau
+    - Kuning
     answer: 2
-  allPackData:
-  - packId: A
-    packName: Level Pack A
-  - packId: B
-    packName: Level Pack B
-  - packId: C
-    packName: Level Pack C
-  - packId: D
-    packName: Level Pack D
+  - levelId: A-4
+    packId: A
+    question: Warna dari Matahari?
+    hint: pictA-4
+    choice:
+    - Merah
+    - Biru
+    - Hijau
+    - Kuning
+    answer: 3
+  - levelId: A-5
+    packId: A
+    question: Warna dari Laut ?
+    hint: pictA-5
+    choice:
+    - Merah
+    - Biru
+    - Hijau
+    - Kuning
+    answer: 1
+  - levelId: B-1
+    packId: B
+    question: Warna dari Langit ?
+    hint: pictB-1
+    choice:
+    - Merah
+    - Biru
+    - Hijau
+    - Kuning
+    answer: 1
+  - levelId: B-2
+    packId: B
+    question: Warna dari Daun ?
+    hint: pictB-2
+    choice:
+    - Merah
+    - Biru
+    - Hijau
+    - Kuning
+    answer: 2
+  - levelId: B-3
+    packId: B
+    question: Warna dari Matahari ?
+    hint: pictB-3
+    choice:
+    - Merah
+    - Biru
+    - Hijau
+    - Kuning
+    answer: 3
+  - levelId: B-4
+    packId: B
+    question: Warna dari Laut ?
+    hint: pictB-4
+    choice:
+    - Merah
+    - Biru
+    - Hijau
+    - Kuning
+    answer: 1
+  - levelId: B-5
+    packId: B
+    question: Warna dari Mawar ?
+    hint: pictB-5
+    choice:
+    - Merah
+    - Biru
+    - Hijau
+    - Kuning
+    answer: 0
+  - levelId: C-1
+    packId: C
+    question: Warna dari Daun ?
+    hint: pictC-1
+    choice:
+    - Merah
+    - Biru
+    - Hijau
+    - Kuning
+    answer: 2
+  - levelId: C-2
+    packId: C
+    question: Warna dari Matahari ?
+    hint: pictC-2
+    choice:
+    - Merah
+    - Biru
+    - Hijau
+    - Kuning
+    answer: 3
+  - levelId: C-3
+    packId: C
+    question: Warna dari Laut ?
+    hint: pictC-3
+    choice:
+    - Merah
+    - Biru
+    - Hijau
+    - Kuning
+    answer: 1
+  - levelId: C-4
+    packId: C
+    question: Warna dari Mawar ?
+    hint: pictC-4
+    choice:
+    - Merah
+    - Biru
+    - Hijau
+    - Kuning
+    answer: 0
+  - levelId: C-5
+    packId: C
+    question: Warna dari Langit ?
+    hint: pictC-5
+    choice:
+    - Merah
+    - Biru
+    - Hijau
+    - Kuning
+    answer: 1
+  - levelId: D-1
+    packId: D
+    question: Warna dari Matahari ?
+    hint: pictD-1
+    choice:
+    - Merah
+    - Biru
+    - Hijau
+    - Kuning
+    answer: 3
+  - levelId: D-2
+    packId: D
+    question: Warna dari Laut ?
+    hint: pictD-2
+    choice:
+    - Merah
+    - Biru
+    - Hijau
+    - Kuning
+    answer: 1
+  - levelId: D-3
+    packId: D
+    question: Warna dari Mawar ?
+    hint: pictD-3
+    choice:
+    - Merah
+    - Biru
+    - Hijau
+    - Kuning
+    answer: 0
+  - levelId: D-4
+    packId: D
+    question: Warna dari Langit ?
+    hint: pictD-4
+    choice:
+    - Merah
+    - Biru
+    - Hijau
+    - Kuning
+    answer: 1
+  - levelId: D-5
+    packId: D
+    question: Warna dari Daun ?
+    hint: pictD-5
+    choice:
+    - Merah
+    - Biru
+    - Hijau
+    - Kuning
+    answer: 2

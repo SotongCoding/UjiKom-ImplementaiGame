@@ -10,7 +10,7 @@ public class Countdown
 
     public System.Action onTimesUp;
 
-    public IEnumerator StartTimerCount(System.Action<float> onTimeChange =null)
+    public IEnumerator StartTimerCount(System.Action<float, int> onTimeChange = null)
     {
         currentCount = answerTime;
         Debug.Log("Initial Time");
@@ -21,7 +21,7 @@ public class Countdown
             currentTimerPrecent = currentCount / answerTime;
             yield return null;
 
-            onTimeChange?.Invoke(currentTimerPrecent);
+            onTimeChange?.Invoke(currentTimerPrecent, (int)currentCount);
         }
         onTimesUp?.Invoke();
     }

@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelSelectControl : MonoBehaviour
+[System.Serializable]
+public class LevelSelectControl
 {
     [SerializeField] private LevelData baseLevelPrefab;
     [SerializeField] private Transform levelPos;
@@ -19,7 +20,7 @@ public class LevelSelectControl : MonoBehaviour
 
         foreach (var item in allAvaiableLevel)
         {
-            var level = Instantiate(baseLevelPrefab, levelPos);
+            var level = MonoBehaviour.Instantiate(baseLevelPrefab, levelPos);
             level.Initial(item);
         }
     }

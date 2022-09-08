@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SceneLevel : MonoBehaviour
+public class PackScene : MonoBehaviour
 {
-    [SerializeField] private LevelSelectControl levelController;
+    [SerializeField] private PackController packController;
     [SerializeField] private UnityEngine.UI.Button backButton;
 
 
     private void Start()
     {
         backButton.onClick.AddListener(Back);
-        levelController.ShowAllLevel();
+        packController.ShowAllPack();
     }
 
     public void Back()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Pack");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
     }
 }

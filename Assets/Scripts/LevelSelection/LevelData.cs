@@ -20,5 +20,7 @@ public class LevelData : MonoBehaviour
     {
         Debug.Log("SelectLevel : " + levelId);
         PlayerPrefs.SetString(CommonVariable.SAVED_SELECTED_LEVEL, levelId);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Gameplay");
+
     }
 }
