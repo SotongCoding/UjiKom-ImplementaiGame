@@ -11,7 +11,7 @@ public class PackData : MonoBehaviour
     {
         this.packId = packId;
         bool isFinish = false;
-        bool isPackUnlock = true;//SaveData.Instacnce.IsPackUnlock(packId);
+        bool isPackUnlock = SaveData.Instance.IsPackUnlock(packId);
 
         packUI.SetInfo(packName, CommonVariable.PACK_PRIZE, isFinish, isPackUnlock);
         packUI.SetButtonEvent(SelectPack, PurchasePack);
@@ -20,10 +20,11 @@ public class PackData : MonoBehaviour
 
     void PurchasePack()
     {
-        // if(Currency.UnlockPack()){
-        //     SaveData.Instance.AddUnlockPack(packId);
-        //     Analytic.TrackUnlockPack();
-        // }
+        if (Currency.UnlockPack(packId))
+        {
+            SaveData.Instance.AddUnlockPack(packId);
+            // Analytic.TrackUnlockPack();
+        }
     }
 
     void SelectPack()

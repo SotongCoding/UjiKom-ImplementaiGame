@@ -10,7 +10,7 @@ public class LevelData : MonoBehaviour
     public void Initial(string levelId)
     {
         this.levelId = levelId;
-        bool IsLevelClear = false;//SaveData.Instacnce.IsLevelClear(packId);
+        bool IsLevelClear = SaveData.Instance.IsLevelClear(levelId);
 
         levelUI.SetInfo(levelId, IsLevelClear);
         levelUI.SetButtonEvent(SelectLevel);

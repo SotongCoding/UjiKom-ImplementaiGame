@@ -8,7 +8,7 @@ public class QuizController
     [SerializeField] private DatabaseController levelDataBase;
     public QuizView quizView;
 
-    private string currentLevel;
+    private string currentLevelId;
     private string currentPack;
 
     List<string> allPackLevels;
@@ -19,7 +19,7 @@ public class QuizController
         var selectedLevel = levelDataBase.GetLevelData(levelId).Value;
 
         allPackLevels = new List<string>(levelDataBase.GetPackLevels(selectedLevel.packId));
-        currentLevel = levelId;
+        currentLevelId = levelId;
         currentLevelIndex = allPackLevels.IndexOf(levelId);
 
         Gameflow.Instance.onWinLevel += CheckLevel;
@@ -29,7 +29,7 @@ public class QuizController
     void InitQuiz(LevelStruct levelData)
     {
         currentLevelIndex = allPackLevels.IndexOf(levelData.levelId);
-        currentLevel = levelData.levelId;
+        currentLevelId = levelData.levelId;
         currentPack = levelData.packId;
 
 
@@ -71,6 +71,8 @@ public class QuizController
     }
     void CorrectAnswer()
     {
+        SaveData.Instance.AddLevelClear(currentLevelId);
+        Currency.AddClearLevelGold();
         Gameflow.Instance.WinLevel();
     }
 }
