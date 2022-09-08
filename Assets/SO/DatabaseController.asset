@@ -33,3 +33,12 @@ MonoBehaviour:
     - NamakuAdalah2
     - NamaKuAdalahSiapa2
     answer: 2
+  allPackData:
+  - packId: A
+    packName: Level Pack A
+  - packId: B
+    packName: Level Pack B
+  - packId: C
+    packName: Level Pack C
+  - packId: D
+    packName: Level Pack D

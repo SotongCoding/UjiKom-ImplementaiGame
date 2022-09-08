@@ -6,7 +6,6 @@ using UnityEngine.UI;
 [System.Serializable]
 public class GameplayScene : MonoBehaviour
 {
-    const string SAVED_SELECTED_LEVEL = "A-1";//"selectedLevel";
     [SerializeField] private Button backButton;
     [SerializeField] private QuizController quizControl;
     [SerializeField] private Countdown questionTimer = new Countdown();
@@ -14,9 +13,8 @@ public class GameplayScene : MonoBehaviour
     public void Initial()
     {
         InitButton();
-        //if (PlayerPrefs.HasKey(SAVED_SELECTED_LEVEL))
-        // quizControl.IntialData(PlayerPrefs.GetString(SAVED_SELECTED_LEVEL));
-        quizControl.IntialData(SAVED_SELECTED_LEVEL);
+        if (PlayerPrefs.HasKey(CommonVariable.SAVED_SELECTED_LEVEL))
+            quizControl.IntialData(PlayerPrefs.GetString(CommonVariable.SAVED_SELECTED_LEVEL, "A-1"));
 
         questionTimer.onTimesUp += Gameflow.Instance.LoseLevel;
 

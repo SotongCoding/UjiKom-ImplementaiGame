@@ -21,20 +21,6 @@ public class DatabaseController : ScriptableObject
 
         return allPack.ToArray();
     }
-    public string[] GetLevelList()
-    {
-        List<string> allLevels = new List<string>();
-
-        for (int i = 0; i < allLevelData.Count; i++)
-        {
-            if (!allLevels.Contains(allLevelData[i].levelId))
-            {
-                allLevels.Add(allLevelData[i].levelId);
-            }
-        }
-
-        return allLevels.ToArray();
-    }
     public string[] GetPackLevels(string PackId)
     {
 
@@ -44,13 +30,13 @@ public class DatabaseController : ScriptableObject
         {
             allLevels.Add(level.levelId);
         }
-
         return allLevels.ToArray();
     }
     public LevelStruct? GetLevelData(string levelId)
     {
         return allLevelData.Find(x => x.levelId.Equals(levelId));
     }
+
 
 }
 [System.Serializable]
