@@ -41,7 +41,7 @@ public class GameplayScene : MonoBehaviour
             () =>
             {
                 UnityEngine.SceneManagement
-                .SceneManager.LoadScene("LevelSelection");
+                .SceneManager.LoadScene("Pack");
             }
         );
     }
